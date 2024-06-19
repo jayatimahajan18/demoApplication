@@ -1,0 +1,6 @@
+com\TestRunner\Test\CRM_Portal.class
+Utilities\ConfigReader.class
+com\TestRunner\CRM\SoNumber.class
+Utilities\ReadExcelData.class
+Utilities\Base.class
+com\TestRunner\Test\ECC_Portal.class
