@@ -7,7 +7,7 @@ import java.util.*;
 public class LeedCode {
     public static void main(String[] args){
         LeedCode lc=new LeedCode();
-        lc.amazonSAD();
+        lc.sortedOrNotSorted();
     }
     public void uniqueCharaterOfString(){
         //1.1
@@ -366,7 +366,27 @@ public class LeedCode {
        }
        System.out.println(x);
    }
-   public void selfDivosionNumber(){
-
+   public void sortedOrNotSorted(){
+       int[] arr={10,9,11,7};
+       int i=0;
+       int asc=0, desc=0;
+       while(i<arr.length-1){//0,1,2
+            if(arr[i]<arr[i+1]){
+                asc++;
+                i++;
+            }
+            else if (arr[i]>arr[i+1]) {
+                desc++;
+                i++;
+            }
+       }
+        if(asc>0 && desc>0){
+            System.out.println("Array is neither Ascending order nor descending");
+        } else if (asc== arr.length-1) {
+            System.out.println("Array is in Ascending order");
+        }
+        else if (desc== arr.length-1) {
+            System.out.println("Array is in Descending order");
+        }
    }
 }
